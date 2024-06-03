@@ -1,0 +1,22 @@
+{
+  "name": "logtar",
+  "version": "0.0.1",
+  "type": "commonjs",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "doc": "jsdoc index.js",
+    "lint": "eslint index.js",
+    "lint:fix": "eslint --fix index.js",
+    "start": "node test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.3.0",
+    "eslint": "^9.3.0",
+    "eslint-plugin-jsdoc": "^48.2.7",
+    "globals": "^15.3.0"
+  }
+}
