@@ -13,17 +13,29 @@ async function init_logger() {
   return logger;
 }
 
+/**
+ *
+ */
 async function main() {
   const logger = await init_logger();
+  // @ts-ignore
   logger.critical("From the main() function");
   nested_func(logger);
 }
+/**
+ *@param {Logger} logger - current Logger instance
+ */
 function nested_func(logger) {
+  // @ts-ignore
   logger.critical("From the nested_func() function");
   super_nested(logger);
 }
 
+/**
+ *@param {Logger} logger - current Logger instance
+ */
 function super_nested(logger) {
+  // @ts-ignore
   logger.critical("From the super_nested() function");
 }
 main();
